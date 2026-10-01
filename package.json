@@ -1,0 +1,14 @@
+{
+  "name": "csv-cleaner-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ChatGPT plugin that flags bad CSV dates, duplicate rows, and encoding problems, then applies only the fixes you accept.",
+  "scripts": {
+    "start": "node --experimental-strip-types server.mjs",
+    "test": "node --experimental-strip-types --test lib/engine.test.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
