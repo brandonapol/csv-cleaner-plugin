@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Proofsheet",
+  "name_for_model": "proofsheet",
+  "description_for_human": "Flag bad dates, duplicate rows, and encoding problems in a CSV, then apply only the fixes you accept.",
+  "description_for_model": "Scan CSV text for encoding damage, invalid or ambiguous dates, and duplicate rows. Show the findings to the user, including id, kind, before, and after. Call applyFixes only with finding ids the user explicitly accepts. You may pass acceptSafe=true only when the user asks to accept every safe fix, and pass reject for anything they exclude. Never invent finding ids. Never claim a fix was applied unless it is in the applied list. Findings with fixable=false are flags only.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://csv-cleaner.example.com/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://csv-cleaner.example.com/logo.svg",
+  "contact_email": "72466214+brandonapol@users.noreply.github.com",
+  "legal_info_url": "https://github.com/brandonapol/csv-cleaner-plugin"
+}
